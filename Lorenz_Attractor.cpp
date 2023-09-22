@@ -4,7 +4,6 @@
 using namespace std;
 
 void display();
-void keypressed(unsigned char key, int x, int y);
 void reshape(int, int);
 void init();
 
@@ -29,7 +28,6 @@ int main(int argv, char** argc)
 
 	// Prerequisite for displaying the window
 	glutDisplayFunc(display);
-	//glutKeyboardFunc(keypressed);
 
 	// Prerequisite for drawing
 	glutReshapeFunc(reshape);
